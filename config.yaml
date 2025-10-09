@@ -1,0 +1,38 @@
+LogLevel: "debug"
+
+API:
+  Host: "127.0.0.1"
+  HTTPPort: 8086
+  ShutdownGrace: 5s
+  EnableTLS: false
+  TLSCertFile: "certs/server.crt"
+  TLSKeyFile: "certs/server.key"
+  TLSClientAuth: "none" # "none", "require", "verify"
+  TLSCAFile: "certs/ca.crt"
+
+Admin:
+  Host: "127.0.0.1"
+  HTTPPort: 8070
+  ShutdownGrace: 5s
+  EnableTLS: false
+  TLSCertFile: "certs/server.crt"
+  TLSKeyFile: "certs/server.key"
+  TLSClientAuth: "none" # "none", "require", "verify"
+  TLSCAFile: "certs/ca.crt"
+
+Metrics:
+  Host: "127.0.0.1"
+  HTTPPort: 8090
+  ShutdownGrace: 5s
+  EnableTLS: false
+  TLSCertFile: "certs/server.crt"
+  TLSKeyFile: "certs/server.key"
+  TLSClientAuth: "none" # "none", "require", "verify"
+  TLSCAFile: "certs/ca.crt"
+
+Pprof:
+  Enable: true
+  Port: 8060
+  ShutdownGrace: 5s
+  User: "admin"
+  Pass: "secret123"
